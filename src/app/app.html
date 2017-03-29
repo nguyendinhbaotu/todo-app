@@ -1,0 +1,50 @@
+<!--<main>
+  <h1 class="title">Hello from Angular !</h1>
+
+  <img src="/img/logo.png">
+</main>
+<footer>
+  <a ng-href="{{app.url}}">Webpack Angular Starter</a>
+</footer>-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h1 class="text-center">To Do App</h1>
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <div class="row">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Create a task" ng-model="$ctrl.taskDescription">
+      </div>
+      <!--<div class="col-md-2">
+        <input type="date" class="form-control" placeholder="Choose Date">
+      </div>-->
+      <div class="col-md-2">
+        <button class="btn btn-primary" ng-click="$ctrl.addTask()">Add Task</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="row">
+      <div class="col-md-8">
+        <button class="btn btn-info" ng-click="$ctrl.selectAll()">Select All</button>
+        <button class="btn btn-warning" ng-click="$ctrl.unselectAll()">Unselect All</button>
+        <button class="btn btn-danger" ng-click="$ctrl.removeSelected()">Remove Selected</button>
+      </div>
+
+      <div ng-repeat="task in $ctrl.tasks">
+        <div class="col-md-8">
+          <div class="checkbox">
+            <label id="{{task.id}}" class="task"><input type="checkbox" value="" ng-model="task.isSelected">{{task.description}}</label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

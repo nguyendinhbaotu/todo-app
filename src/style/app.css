@@ -1,0 +1,10 @@
+.task {
+    font-size: 25px;
+    padding-left: 50px !important;
+}
+
+.task>input {
+    width: 30px;
+    height: 30px;
+    margin-left: -50px !important;
+}
