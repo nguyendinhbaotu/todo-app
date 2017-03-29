@@ -9,3 +9,6 @@ $ npm install
 
 # start the server
 $ npm start
+
+# open your browser
+http://localhost:8080/
